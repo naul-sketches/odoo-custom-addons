@@ -1,0 +1,20 @@
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Backup and editor files
+*.swp
+*.swo
+*~
+.DS_Store
+*.orig
+*.rej
+
+# Execution logs
+*.log
