@@ -1,0 +1,159 @@
+<section class="container py-4" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; max-width: 960px; color: #2D3748;">
+    <!-- Header Section -->
+    <div class="text-center mb-5">
+        <h1 class="fw-bold mb-2" style="font-size: 32px; color: #1A202C; letter-spacing: -0.5px;">
+            Sale Order Discount Approval
+        </h1>
+        <p class="mb-3" style="font-size: 17px; color: #64748B; font-weight: 400;">
+            Tiered approval workflow for quotations containing discounts above authorized limits.
+        </p>
+        <div class="d-flex justify-content-center flex-wrap gap-2 pt-1">
+            <span style="display: inline-block; padding: 6px 14px; font-size: 13px; font-weight: 600; border-radius: 20px; background-color: #F4EBF1; color: #714B67; border: 1px solid #E2C8DC;">
+                Odoo 20
+            </span>
+            <span style="display: inline-block; padding: 6px 14px; font-size: 13px; font-weight: 600; border-radius: 20px; background-color: #EBF3FB; color: #1D5A91; border: 1px solid #C8DCF2;">
+                License LGPL-3
+            </span>
+            <span style="display: inline-block; padding: 6px 14px; font-size: 13px; font-weight: 600; border-radius: 20px; background-color: #EBF8F5; color: #007A6C; border: 1px solid #BDE8DC;">
+                OCA Standards
+            </span>
+            <span style="display: inline-block; padding: 6px 14px; font-size: 13px; font-weight: 600; border-radius: 20px; background-color: #F8FAFC; color: #475569; border: 1px solid #E2E8F0;">
+                Zero Lock-In
+            </span>
+        </div>
+    </div>
+
+    <!-- Value Proposition Banner -->
+    <div class="mb-4" style="background: linear-gradient(135deg, #F8FAFC 0%, #EDF2F7 100%); border-radius: 12px; padding: 24px; border: 1px solid #E2E8F0;">
+        <div class="d-flex align-items-start">
+            <div style="font-size: 24px; line-height: 1; margin-right: 16px; margin-top: 2px;">🛡️</div>
+            <div>
+                <h3 style="font-size: 16px; font-weight: 700; color: #1A202C; margin-bottom: 6px;">
+                    Protect profit margins without slowing down sales
+                </h3>
+                <p style="font-size: 14px; color: #4A5568; line-height: 1.6; margin-bottom: 0;">
+                    In standard Odoo, any sales representative can confirm orders with arbitrary discounts.
+                    This module enforces an automated verification gate: quotations exceeding authorized
+                    discount ceilings require manager approval before final confirmation.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Step by Step Workflow Cards -->
+    <div class="mb-5">
+        <h2 class="text-center fw-bold mb-4" style="font-size: 22px; color: #1A202C;">
+            How the approval workflow operates
+        </h2>
+        <div class="row g-3">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div style="background-color: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 10px; padding: 20px; height: 100%;">
+                    <div style="width: 32px; height: 32px; border-radius: 8px; background-color: #EFF6FF; color: #2563EB; font-weight: 700; font-size: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 12px;">
+                        1
+                    </div>
+                    <h4 style="font-size: 15px; font-weight: 600; color: #1A202C; margin-bottom: 6px;">Quotation creation</h4>
+                    <p style="font-size: 13px; color: #64748B; line-height: 1.5; margin-bottom: 0;">
+                        Sales user enters order lines. If discounts exceed the
+                        configured threshold, an amber warning banner appears.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div style="background-color: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 10px; padding: 20px; height: 100%;">
+                    <div style="width: 32px; height: 32px; border-radius: 8px; background-color: #FEF3C7; color: #D97706; font-weight: 700; font-size: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 12px;">
+                        2
+                    </div>
+                    <h4 style="font-size: 15px; font-weight: 600; color: #1A202C; margin-bottom: 6px;">Approval request</h4>
+                    <p style="font-size: 13px; color: #64748B; line-height: 1.5; margin-bottom: 0;">
+                        User clicks "Request approval". Status switches to Pending and a chatter notice alerts sales supervisors.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div style="background-color: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 10px; padding: 20px; height: 100%;">
+                    <div style="width: 32px; height: 32px; border-radius: 8px; background-color: #ECFDF5; color: #059669; font-weight: 700; font-size: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 12px;">
+                        3
+                    </div>
+                    <h4 style="font-size: 15px; font-weight: 600; color: #1A202C; margin-bottom: 6px;">Manager decision</h4>
+                    <p style="font-size: 13px; color: #64748B; line-height: 1.5; margin-bottom: 0;">
+                        Sales manager clicks "Approve discount" to authorize or "Reject discount" to log rejection reasons.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div style="background-color: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 10px; padding: 20px; height: 100%;">
+                    <div style="width: 32px; height: 32px; border-radius: 8px; background-color: #F5F3FF; color: #7C3AED; font-weight: 700; font-size: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 12px;">
+                        4
+                    </div>
+                    <h4 style="font-size: 15px; font-weight: 600; color: #1A202C; margin-bottom: 6px;">Confirmation</h4>
+                    <p style="font-size: 13px; color: #64748B; line-height: 1.5; margin-bottom: 0;">
+                        Once approved, standard order confirmation is enabled. Unapproved high-discount orders remain blocked.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Role-Based Permissions Grid -->
+    <div class="row g-4 mb-5">
+        <div class="col-12 col-md-6">
+            <div style="background-color: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 24px; height: 100%;">
+                <div class="d-flex align-items-center mb-3">
+                    <span style="display: inline-block; width: 10px; height: 10px; border-radius: 50%; background-color: #3B82F6; margin-right: 10px;"></span>
+                    <h3 style="font-size: 16px; font-weight: 700; color: #1A202C; margin-bottom: 0;">
+                        Sales Representatives
+                    </h3>
+                </div>
+                <ul style="font-size: 13.5px; color: #4A5568; line-height: 1.7; padding-left: 20px; margin-bottom: 0;">
+                    <li>Create and edit quotations normally.</li>
+                    <li>Automatic threshold notification when discounts exceed limit.</li>
+                    <li>Submit approval requests with a single click.</li>
+                    <li>Chatter notifications keep sellers informed of approval or rejection.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <div style="background-color: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 24px; height: 100%;">
+                <div class="d-flex align-items-center mb-3">
+                    <span style="display: inline-block; width: 10px; height: 10px; border-radius: 50%; background-color: #10B981; margin-right: 10px;"></span>
+                    <h3 style="font-size: 16px; font-weight: 700; color: #1A202C; margin-bottom: 0;">
+                        Sales Managers
+                    </h3>
+                </div>
+                <ul style="font-size: 13.5px; color: #4A5568; line-height: 1.7; padding-left: 20px; margin-bottom: 0;">
+                    <li>Review pending orders with dedicated audit information.</li>
+                    <li>One-click approval or rejection with audit logging.</li>
+                    <li>Records approver identity, timestamp, and optional rejection notes.</li>
+                    <li>Uses standard <code>sales_team.group_sale_manager</code> security group.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Technical Architecture Highlights -->
+    <div style="background-color: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 24px;" class="mb-4">
+        <h3 style="font-size: 16px; font-weight: 700; color: #1A202C; margin-bottom: 16px;">
+            Clean architecture highlights
+        </h3>
+        <div class="row g-3">
+            <div class="col-12 col-md-4">
+                <div style="font-size: 13px; color: #4A5568;">
+                    <strong style="color: #1A202C; display: block; margin-bottom: 4px;">Minimal dependencies</strong>
+                    Depends strictly on core <code>sale</code>. No unnecessary overhead.
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div style="font-size: 13px; color: #4A5568;">
+                    <strong style="color: #1A202C; display: block; margin-bottom: 4px;">Native Odoo 20 hook</strong>
+                    Extends <code>_confirmation_error_message</code> for clean validation across backend, portal, and API.
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div style="font-size: 13px; color: #4A5568;">
+                    <strong style="color: #1A202C; display: block; margin-bottom: 4px;">Batch ORM execution</strong>
+                    All state transitions, writes, and logging operate in multi-record batches.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

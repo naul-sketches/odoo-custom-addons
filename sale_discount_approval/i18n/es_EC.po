@@ -1,0 +1,201 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sale_discount_approval
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 20.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-10 16:35+0000\n"
+"PO-Revision-Date: 2026-11-10 16:35+0000\n"
+"Last-Translator: Luis Calero\n"
+"Language-Team: Spanish (Ecuador)\n"
+"Language: es_EC\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: sale_discount_approval
+#: model:ir.model.fields,field_description:sale_discount_approval.field_sale_order__approval_date
+msgid "Approval date"
+msgstr "Fecha de aprobación"
+
+#. module: sale_discount_approval
+#: model:ir.model.fields,field_description:sale_discount_approval.field_sale_order__approval_state
+msgid "Approval status"
+msgstr "Estado de aprobación"
+
+#. module: sale_discount_approval
+#: model:ir.model.fields,field_description:sale_discount_approval.field_sale_order__approval_user_id
+msgid "Approved by"
+msgstr "Aprobado por"
+
+#. module: sale_discount_approval
+#: model:ir.model.fields.selection,name:sale_discount_approval.selection__sale_order__approval_state__approved
+msgid "Approved"
+msgstr "Aprobado"
+
+#. module: sale_discount_approval
+#: model:ir.model.fields,help:sale_discount_approval.field_sale_order__approval_user_id
+msgid "Sales manager who authorized the quotation discount request."
+msgstr ""
+"Responsable de ventas que autorizó la solicitud de descuento "
+"de la cotización."
+
+#. module: sale_discount_approval
+#: model:ir.model.fields,help:sale_discount_approval.field_sale_order__approval_date
+msgid "Timestamp recorded when the discount request was approved."
+msgstr "Fecha y hora registradas al aprobar la solicitud de descuento."
+
+#. module: sale_discount_approval
+#: model:ir.model.fields,help:sale_discount_approval.field_sale_order__approval_state
+msgid ""
+"Workflow state indicating whether order line discounts require or "
+"received manager authorization."
+msgstr ""
+"Estado del flujo que indica si los descuentos en líneas de pedido "
+"requieren o recibieron autorización de la gerencia."
+
+#. module: sale_discount_approval
+#: model:ir.model.fields,help:sale_discount_approval.field_sale_order__max_discount_applied
+msgid "Highest discount rate detected across commercial order lines."
+msgstr ""
+"Mayor tasa de descuento detectada en las líneas comerciales del pedido."
+
+#. module: sale_discount_approval
+#: model:ir.model.fields,help:sale_discount_approval.field_sale_order__rejection_reason
+msgid ""
+"Explanation provided by the sales manager when rejecting the discount "
+"request."
+msgstr ""
+"Explicación proporcionada por el responsable de ventas al rechazar "
+"la solicitud de descuento."
+
+#. module: sale_discount_approval
+#: model:ir.model.fields,field_description:sale_discount_approval.field_sale_order__max_discount_applied
+msgid "Max discount applied (%)"
+msgstr "Descuento máximo aplicado (%)"
+
+#. module: sale_discount_approval
+#: model:ir.model.fields.selection,name:sale_discount_approval.selection__sale_order__approval_state__not_required
+msgid "Not required"
+msgstr "No requerido"
+
+#. module: sale_discount_approval
+#: model:ir.model.fields.selection,name:sale_discount_approval.selection__sale_order__approval_state__pending
+msgid "Pending approval"
+msgstr "Pendiente de aprobación"
+
+#. module: sale_discount_approval
+#: model:ir.model.fields.selection,name:sale_discount_approval.selection__sale_order__approval_state__rejected
+msgid "Rejected"
+msgstr "Rechazado"
+
+#. module: sale_discount_approval
+#: model:ir.model.fields,field_description:sale_discount_approval.field_sale_order__rejection_reason
+msgid "Rejection reason"
+msgstr "Motivo de rechazo"
+
+#. module: sale_discount_approval
+#: code:addons/sale_discount_approval/models/sale_order.py:0
+#, python-format
+msgid ""
+"Approval requested: Order contains a maximum discount of %.2f%%, "
+"which exceeds the allowed limit of %.2f%%."
+msgstr ""
+"Aprobación solicitada: El pedido contiene un descuento máximo de "
+"%.2f%%, el cual supera el límite permitido de %.2f%%."
+
+#. module: sale_discount_approval
+#: code:addons/sale_discount_approval/models/sale_order.py:0
+#, python-format
+msgid "Only sales managers can approve discounted orders."
+msgstr ""
+"Solo los responsables de ventas pueden aprobar pedidos con descuento."
+
+#. module: sale_discount_approval
+#: code:addons/sale_discount_approval/models/sale_order.py:0
+#, python-format
+msgid "Discount authorized by %s."
+msgstr "Descuento autorizado por %s."
+
+#. module: sale_discount_approval
+#: code:addons/sale_discount_approval/models/sale_order.py:0
+#, python-format
+msgid "Only sales managers can reject orders."
+msgstr "Solo los responsables de ventas pueden rechazar pedidos."
+
+#. module: sale_discount_approval
+#: code:addons/sale_discount_approval/models/sale_order.py:0
+#, python-format
+msgid "Discount rejected by supervisor."
+msgstr "Descuento rechazado por el supervisor."
+
+#. module: sale_discount_approval
+#: code:addons/sale_discount_approval/models/sale_order.py:0
+#, python-format
+msgid "Discount rejected: %s"
+msgstr "Descuento rechazado: %s"
+
+#. module: sale_discount_approval
+#: code:addons/sale_discount_approval/models/sale_order.py:0
+#, python-format
+msgid ""
+"Cannot confirm order %s: The maximum discount applied (%.2f%%) "
+"exceeds the authorized threshold of %.2f%%. "
+"Manager approval is required."
+msgstr ""
+"No se puede confirmar el pedido %s: El descuento máximo aplicado "
+"(%.2f%%) supera el umbral autorizado de %.2f%%. "
+"Se requiere aprobación de la gerencia de ventas."
+
+#. module: sale_discount_approval
+#: model_terms:ir.ui.view,arch_db:sale_discount_approval.sale_order_view_form_inherit_discount_approval
+msgid "Request approval"
+msgstr "Solicitar aprobación"
+
+#. module: sale_discount_approval
+#: model_terms:ir.ui.view,arch_db:sale_discount_approval.sale_order_view_form_inherit_discount_approval
+msgid "Approve discount"
+msgstr "Aprobar descuento"
+
+#. module: sale_discount_approval
+#: model_terms:ir.ui.view,arch_db:sale_discount_approval.sale_order_view_form_inherit_discount_approval
+msgid "Reject discount"
+msgstr "Rechazar descuento"
+
+#. module: sale_discount_approval
+#: model_terms:ir.ui.view,arch_db:sale_discount_approval.sale_order_view_form_inherit_discount_approval
+msgid "Pending approval:"
+msgstr "Pendiente de aprobación:"
+
+#. module: sale_discount_approval
+#: model_terms:ir.ui.view,arch_db:sale_discount_approval.sale_order_view_form_inherit_discount_approval
+msgid ""
+"This order contains discounts exceeding 15% and requires manager "
+"authorization before confirmation."
+msgstr ""
+"Este pedido contiene descuentos superiores al 15% y requiere "
+"autorización de la gerencia antes de su confirmación."
+
+#. module: sale_discount_approval
+#: model_terms:ir.ui.view,arch_db:sale_discount_approval.sale_order_view_form_inherit_discount_approval
+msgid "Order rejected:"
+msgstr "Pedido rechazado:"
+
+#. module: sale_discount_approval
+#: model_terms:ir.ui.view,arch_db:sale_discount_approval.sale_order_view_form_inherit_discount_approval
+msgid "Manager rejected this discount request. Reason:"
+msgstr ""
+"El responsable de ventas rechazó esta solicitud de descuento. Motivo:"
+
+#. module: sale_discount_approval
+#: model_terms:ir.ui.view,arch_db:sale_discount_approval.sale_order_view_form_inherit_discount_approval
+msgid "Discount approval audit"
+msgstr "Auditoría de aprobación de descuento"
+
+#. module: sale_discount_approval
+#: model_terms:ir.ui.view,arch_db:sale_discount_approval.sale_order_view_form_inherit_discount_approval
+msgid "Rejection notes..."
+msgstr "Notas de rechazo..."

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <!-- Demo Customer -->
+    <record id="partner_demo_discount_client" model="res.partner">
+        <field name="name">Andina Comercializadora Demo</field>
+        <field name="is_company" eval="True"/>
+        <field name="street">Av. Amazonas y Naciones Unidas</field>
+        <field name="city">Quito</field>
+        <field name="email">demo@andinacomercial.ec</field>
+    </record>
+
+    <!-- Demo Products -->
+    <record id="product_demo_hardware" model="product.product">
+        <field name="name">Servidor Empresarial Pro</field>
+        <field name="list_price">1500.0</field>
+        <field name="type">consu</field>
+    </record>
+
+    <record id="product_demo_service" model="product.product">
+        <field name="name">Consultoria de Implementacion</field>
+        <field name="list_price">200.0</field>
+        <field name="type">service</field>
+    </record>
+
+    <!-- Quotation 1: Standard discount (10%) - No approval required -->
+    <record id="sale_order_demo_standard" model="sale.order">
+        <field name="partner_id" ref="partner_demo_discount_client"/>
+        <field name="approval_state">not_required</field>
+    </record>
+    <record id="sale_order_line_demo_standard_1" model="sale.order.line">
+        <field name="order_id" ref="sale_order_demo_standard"/>
+        <field name="product_id" ref="product_demo_hardware"/>
+        <field name="product_uom_qty">1.0</field>
+        <field name="price_unit">1500.0</field>
+        <field name="discount">10.0</field>
+    </record>
+
+    <!-- Quotation 2: High discount (20%) - Pending approval -->
+    <record id="sale_order_demo_pending" model="sale.order">
+        <field name="partner_id" ref="partner_demo_discount_client"/>
+        <field name="approval_state">pending</field>
+    </record>
+    <record id="sale_order_line_demo_pending_1" model="sale.order.line">
+        <field name="order_id" ref="sale_order_demo_pending"/>
+        <field name="product_id" ref="product_demo_hardware"/>
+        <field name="product_uom_qty">2.0</field>
+        <field name="price_unit">1500.0</field>
+        <field name="discount">20.0</field>
+    </record>
+
+    <!-- Quotation 3: High discount (25%) - Already approved -->
+    <record id="sale_order_demo_approved" model="sale.order">
+        <field name="partner_id" ref="partner_demo_discount_client"/>
+        <field name="approval_state">approved</field>
+        <field name="approval_user_id" ref="base.user_admin"/>
+        <field name="approval_date" eval="DateTime.now()"/>
+    </record>
+    <record id="sale_order_line_demo_approved_1" model="sale.order.line">
+        <field name="order_id" ref="sale_order_demo_approved"/>
+        <field name="product_id" ref="product_demo_service"/>
+        <field name="product_uom_qty">5.0</field>
+        <field name="price_unit">200.0</field>
+        <field name="discount">25.0</field>
+    </record>
+
+    <!-- Quotation 4: Excessive discount (35%) - Rejected by supervisor -->
+    <record id="sale_order_demo_rejected" model="sale.order">
+        <field name="partner_id" ref="partner_demo_discount_client"/>
+        <field name="approval_state">rejected</field>
+        <field name="rejection_reason">
+            Discount of 35% exceeds authorized margin policy.
+        </field>
+    </record>
+    <record id="sale_order_line_demo_rejected_1" model="sale.order.line">
+        <field name="order_id" ref="sale_order_demo_rejected"/>
+        <field name="product_id" ref="product_demo_hardware"/>
+        <field name="product_uom_qty">1.0</field>
+        <field name="price_unit">1500.0</field>
+        <field name="discount">35.0</field>
+    </record>
+</odoo>
+
